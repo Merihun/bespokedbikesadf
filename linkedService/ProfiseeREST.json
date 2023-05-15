@@ -1,19 +1,13 @@
 {
 	"name": "ProfiseeREST",
-	"type": "Microsoft.DataFactory/factories/linkedservices",
 	"properties": {
 		"annotations": [],
 		"type": "RestService",
 		"typeProperties": {
-			"url": "https://sbprofisee.onebridge.xyz/profisee/rest",
+			"url": "https://sbprofisee.onebridge.xyz/profisee/rest/v1",
 			"enableServerCertificateValidation": true,
-			"authenticationType": "Anonymous",
-			"authHeaders": {
-				"X-API-Key": {
-					"type": "SecureString",
-					"value": "**********"
-				}
-			}
+			"authenticationType": "Anonymous"
 		}
-	}
+	},
+	"type": "Microsoft.DataFactory/factories/linkedservices"
 }
