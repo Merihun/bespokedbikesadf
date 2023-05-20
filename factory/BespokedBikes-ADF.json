@@ -1,0 +1,9 @@
+{
+	"name": "BespokedBikes-ADF",
+	"location": "eastus",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "27bcf068-ca58-440f-8ac0-534329ee199f",
+		"tenantId": "9e26ac01-4f70-4b4e-a856-78b0b72324ad"
+	}
+}
