@@ -18,6 +18,7 @@
 		"type": "BlobEventsTrigger",
 		"typeProperties": {
 			"blobPathBeginsWith": "/profisee-input/blobs/",
+			"blobPathEndsWith": "count",
 			"ignoreEmptyBlobs": true,
 			"scope": "/subscriptions/1891eec5-ea7b-4524-9b2e-89b85a66cec9/resourceGroups/BeSpokedBikes/providers/Microsoft.Storage/storageAccounts/bespokedbikesdemostorage",
 			"events": [
