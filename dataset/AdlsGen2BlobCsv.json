@@ -3,7 +3,7 @@
 	"properties": {
 		"description": "Azure Data Lake Storage Gen2 container for CSV format.",
 		"linkedServiceName": {
-			"referenceName": "ls_AzureDLS",
+			"referenceName": "ls_dls",
 			"type": "LinkedServiceReference"
 		},
 		"parameters": {
