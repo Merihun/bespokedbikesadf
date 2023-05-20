@@ -13,8 +13,8 @@
 		"typeProperties": {
 			"location": {
 				"type": "AzureBlobFSLocation",
-				"fileName": "Mountaventure.csv",
-				"folderPath": "product",
+				"fileName": "CustomerAccounts.csv",
+				"folderPath": "CustomerAccount",
 				"fileSystem": "profisee-input"
 			},
 			"columnDelimiter": ",",
