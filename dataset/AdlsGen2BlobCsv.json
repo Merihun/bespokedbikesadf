@@ -13,7 +13,7 @@
 			},
 			"FileName": {
 				"type": "string",
-				"defaultValue": "customeraccount.csv"
+				"defaultValue": "FHI360CustomerAccounts.csv"
 			}
 		},
 		"folder": {
