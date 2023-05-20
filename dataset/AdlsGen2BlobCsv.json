@@ -9,7 +9,7 @@
 		"parameters": {
 			"FolderName": {
 				"type": "string",
-				"defaultValue": "profisee-input/customeraccount"
+				"defaultValue": "profisee-input"
 			},
 			"FileName": {
 				"type": "string",
@@ -25,6 +25,7 @@
 			"location": {
 				"type": "AzureBlobFSLocation",
 				"fileName": "FHI360CustomerAccounts.csv",
+				"folderPath": "customeraccount",
 				"fileSystem": {
 					"value": "@dataset().FolderName",
 					"type": "Expression"
