@@ -25,7 +25,6 @@
 			"location": {
 				"type": "AzureBlobFSLocation",
 				"fileName": "FHI360CustomerAccounts.csv",
-				"folderPath": "customeraccount",
 				"fileSystem": {
 					"value": "@dataset().FolderName",
 					"type": "Expression"
