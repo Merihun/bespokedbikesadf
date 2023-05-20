@@ -11,6 +11,10 @@
 			"type": "secureString",
 			"metadata": "Secure string for 'accountKey' of 'ls_AzureDataLakeStorage'"
 		},
+		"ProfiseeRestDemo_properties_typeProperties_url": {
+			"type": "string",
+			"defaultValue": "https://sbprofisee.onebridge.xyz/profisee/rest/v1"
+		},
 		"ls_AzureDataLakeStorage_properties_typeProperties_url": {
 			"type": "string",
 			"defaultValue": "https://bespokedbikesdemostorage.dfs.core.windows.net/"
@@ -18,10 +22,6 @@
 		"ls_azurekeyvault_properties_typeProperties_baseUrl": {
 			"type": "string",
 			"defaultValue": "https://BeSpokedBikesKeyVault.vault.azure.net/"
-		},
-		"ProfiseeRestDemo_properties_typeProperties_url": {
-			"type": "string",
-			"defaultValue": "https://sbprofisee.onebridge.xyz/profisee/rest/v1"
 		},
 		"containerUri": {
 			"type": "string",

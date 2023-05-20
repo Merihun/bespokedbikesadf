@@ -8,14 +8,14 @@
 		"ls_AzureDataLakeStorage_accountKey": {
 			"value": ""
 		},
+		"ProfiseeRestDemo_properties_typeProperties_url": {
+			"value": "https://sbprofisee.onebridge.xyz/profisee/rest/v1"
+		},
 		"ls_AzureDataLakeStorage_properties_typeProperties_url": {
 			"value": "https://bespokedbikesdemostorage.dfs.core.windows.net/"
 		},
 		"ls_azurekeyvault_properties_typeProperties_baseUrl": {
 			"value": "https://BeSpokedBikesKeyVault.vault.azure.net/"
-		},
-		"ProfiseeRestDemo_properties_typeProperties_url": {
-			"value": "https://sbprofisee.onebridge.xyz/profisee/rest/v1"
 		}
 	}
 }
