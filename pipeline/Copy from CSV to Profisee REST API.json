@@ -78,7 +78,7 @@
 		"parameters": {
 			"FileName": {
 				"type": "string",
-				"defaultValue": "CustomerAccounts.csv"
+				"defaultValue": "FHI360CustomerAccounts.csv"
 			},
 			"FileFolder": {
 				"type": "string",
