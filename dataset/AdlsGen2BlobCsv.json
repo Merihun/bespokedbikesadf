@@ -26,6 +26,7 @@
 					"value": "@dataset().FileName",
 					"type": "Expression"
 				},
+				"folderPath": "CustomerAccount",
 				"fileSystem": {
 					"value": "@dataset().FolderName",
 					"type": "Expression"
