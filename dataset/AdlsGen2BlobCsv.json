@@ -24,11 +24,8 @@
 		"typeProperties": {
 			"location": {
 				"type": "AzureBlobFSLocation",
-				"fileName": {
-					"value": "@dataset().FileName",
-					"type": "Expression"
-				},
-				"folderPath": "customeraccount",
+				"fileName": "CustomerAccounts.csv",
+				"folderPath": "profisee-input/customeraccount",
 				"fileSystem": {
 					"value": "@dataset().FolderName",
 					"type": "Expression"
