@@ -82,7 +82,7 @@
 			},
 			"FileFolder": {
 				"type": "string",
-				"defaultValue": "profisee-input/customeraccount"
+				"defaultValue": "profisee-input"
 			}
 		},
 		"folder": {
