@@ -7,13 +7,13 @@
 			"type": "LinkedServiceReference"
 		},
 		"parameters": {
-			"FolderName": {
-				"type": "string",
-				"defaultValue": "profisee-input/customeraccount"
-			},
 			"FileName": {
 				"type": "string",
 				"defaultValue": "FHI360CustomerAccounts.csv"
+			},
+			"FolderName": {
+				"type": "string",
+				"defaultValue": "profisee-input/customeraccount"
 			}
 		},
 		"folder": {
