@@ -9,11 +9,15 @@
 		"parameters": {
 			"FolderName": {
 				"type": "string",
-				"defaultValue": "profisee-input/customeraccount"
+				"defaultValue": "profisee-input"
 			},
 			"FileName": {
 				"type": "string",
 				"defaultValue": "FHI360CustomerAccounts.csv"
+			},
+			"Directory": {
+				"type": "string",
+				"defaultValue": "customeraccount"
 			}
 		},
 		"folder": {
