@@ -8,10 +8,12 @@
 		},
 		"parameters": {
 			"FolderName": {
-				"type": "string"
+				"type": "string",
+				"defaultValue": "profisee-input/customeraccount"
 			},
 			"FileName": {
-				"type": "string"
+				"type": "string",
+				"defaultValue": "customeraccount.csv"
 			}
 		},
 		"folder": {
