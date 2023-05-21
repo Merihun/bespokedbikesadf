@@ -1,0 +1,22 @@
+{
+	"name": "ls_ProfiseeRESTAPI_upsert",
+	"properties": {
+		"annotations": [],
+		"type": "RestService",
+		"typeProperties": {
+			"url": "https://sbprofisee.onebridge.xyz/profisee/rest/v1",
+			"enableServerCertificateValidation": true,
+			"authenticationType": "Basic",
+			"userName": "X-API-Key",
+			"password": {
+				"type": "AzureKeyVaultSecret",
+				"store": {
+					"referenceName": "ls_AzureKV",
+					"type": "LinkedServiceReference"
+				},
+				"secretName": "rest-api-key",
+				"secretVersion": "42a271f3d4324f438a5faab4d4c8103d"
+			}
+		}
+	}
+}
