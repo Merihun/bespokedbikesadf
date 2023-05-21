@@ -122,7 +122,7 @@
 					},
 					"FileFolder": {
 						"type": "string",
-						"defaultValue": "profisee-input/customeraccount"
+						"defaultValue": "profisee-input"
 					}
 				},
 				"folder": {
@@ -149,7 +149,7 @@
 				"parameters": {
 					"FolderName": {
 						"type": "string",
-						"defaultValue": "profisee-input"
+						"defaultValue": "profisee-input/customeraccount"
 					},
 					"FileName": {
 						"type": "string",
