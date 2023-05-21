@@ -1,0 +1,9 @@
+{
+	"name": "merihun-adf-demo",
+	"location": "eastus",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "6e625862-9629-432e-9414-883239261b2d",
+		"tenantId": "9e26ac01-4f70-4b4e-a856-78b0b72324ad"
+	}
+}
