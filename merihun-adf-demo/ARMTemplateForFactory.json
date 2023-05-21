@@ -148,10 +148,12 @@
 				},
 				"parameters": {
 					"FolderName": {
-						"type": "string"
+						"type": "string",
+						"defaultValue": "profisee-input"
 					},
 					"FileName": {
-						"type": "string"
+						"type": "string",
+						"defaultValue": "profisee-Demo1.csv"
 					}
 				},
 				"folder": {
