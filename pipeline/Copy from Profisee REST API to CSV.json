@@ -1,0 +1,172 @@
+{
+	"name": "Copy from Profisee REST API to CSV",
+	"properties": {
+		"activities": [
+			{
+				"name": "Copy from Profisee REST API to CSV",
+				"description": "Copy records from Profisee via the Profisee REST API to ADLS Gen2 in CSV format.",
+				"type": "Copy",
+				"dependsOn": [],
+				"policy": {
+					"timeout": "7.00:00:00",
+					"retry": 0,
+					"retryIntervalInSeconds": 30,
+					"secureOutput": false,
+					"secureInput": false
+				},
+				"userProperties": [],
+				"typeProperties": {
+					"source": {
+						"type": "RestSource",
+						"httpRequestTimeout": "00:01:40",
+						"requestInterval": "00.00:00:00.010",
+						"requestMethod": "GET",
+						"paginationRules": {
+							"AbsoluteUrl": "$.nextPage"
+						}
+					},
+					"sink": {
+						"type": "DelimitedTextSink",
+						"storeSettings": {
+							"type": "AzureBlobFSWriteSettings"
+						},
+						"formatSettings": {
+							"type": "DelimitedTextWriteSettings",
+							"quoteAllText": true,
+							"fileExtension": ".csv"
+						}
+					},
+					"enableStaging": false,
+					"translator": {
+						"type": "TabularTranslator",
+						"mappings": [
+							{
+								"source": {
+									"path": "$['data'][0]['code']"
+								},
+								"sink": {
+									"name": "code",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"path": "$['data'][0]['name']"
+								},
+								"sink": {
+									"name": "name",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"path": "$['data'][0]['addressLine1']"
+								},
+								"sink": {
+									"name": "addressLine1",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"path": "$['data'][0]['addressLine2']"
+								},
+								"sink": {
+									"name": "addressLine2",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"path": "$['data'][0]['addressLine3']"
+								},
+								"sink": {
+									"name": "addressLine3",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"path": "$['data'][0]['city']"
+								},
+								"sink": {
+									"name": "city",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"path": "$['data'][0]['stateProvince']"
+								},
+								"sink": {
+									"name": "stateProvince",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"path": "$['data'][0]['postalCode']"
+								},
+								"sink": {
+									"name": "postalCode",
+									"type": "String"
+								}
+							}
+						],
+						"collectionReference": "$['data']",
+						"mapComplexValuesToString": false
+					}
+				},
+				"inputs": [
+					{
+						"referenceName": "ProfiseeRESTAPI_Records_Get",
+						"type": "DatasetReference",
+						"parameters": {
+							"entityId": {
+								"value": "@variables('EntityId')",
+								"type": "Expression"
+							},
+							"pageSize": 1000,
+							"attributes": " [Name],[Code],[AddressLine1],[AddressLine2],[AddressLine3],[City],[StateProvince],[PostalCode]",
+							"filter": " [StateProvince] eq 'LA'",
+							"orderBy": " ",
+							"dbaFormat": 1,
+							"recordCodes": " "
+						}
+					}
+				],
+				"outputs": [
+					{
+						"referenceName": "AdlsGen2BlobCsv1",
+						"type": "DatasetReference",
+						"parameters": {
+							"FolderName": {
+								"value": "@concat(variables('OutputContainer'), '/', variables('EntityId'))",
+								"type": "Expression"
+							},
+							"FileName": {
+								"value": "@concat(variables('EntityId'), '_', string(utcnow()), '.csv')",
+								"type": "Expression"
+							}
+						}
+					}
+				]
+			}
+		],
+		"variables": {
+			"OutputContainer": {
+				"type": "String",
+				"defaultValue": "profisee-output"
+			},
+			"EntityId": {
+				"type": "String",
+				"defaultValue": "customeraccount"
+			}
+		},
+		"folder": {
+			"name": "CSV Format"
+		},
+		"annotations": [],
+		"lastPublishTime": "2020-09-25T15:29:08Z"
+	}
+}
