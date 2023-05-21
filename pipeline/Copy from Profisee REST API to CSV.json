@@ -128,7 +128,7 @@
 							},
 							"pageSize": 1000,
 							"attributes": " [Name],[Code],[AddressLine1],[AddressLine2],[AddressLine3],[City],[StateProvince],[PostalCode]",
-							"filter": " [StateProvince] eq 'LA'",
+							"filter": " [Source System] eq 'Onbridge-Demo'",
 							"orderBy": " ",
 							"dbaFormat": 1,
 							"recordCodes": " "
