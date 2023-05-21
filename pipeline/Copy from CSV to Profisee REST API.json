@@ -68,10 +68,12 @@
 		],
 		"parameters": {
 			"FileName": {
-				"type": "string"
+				"type": "string",
+				"defaultValue": "Profisee-Demo1.csv"
 			},
 			"FileFolder": {
-				"type": "string"
+				"type": "string",
+				"defaultValue": "profisee-input/customeraccount"
 			}
 		},
 		"folder": {
