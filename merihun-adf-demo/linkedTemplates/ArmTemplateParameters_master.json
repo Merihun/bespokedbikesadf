@@ -1,0 +1,30 @@
+{
+	"$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+	"contentVersion": "1.0.0.0",
+	"parameters": {
+		"factoryName": {
+			"value": "merihun-adf-demo"
+		},
+		"ls_azure_datalake_storage_accountKey": {
+			"value": ""
+		},
+		"ls_AzureKV_properties_typeProperties_baseUrl": {
+			"value": "https://fhi360demoKV.vault.azure.net/"
+		},
+		"ls_ProfiseeRESTAPI_upsert_properties_typeProperties_url": {
+			"value": "https://sbprofisee.onebridge.xyz/profisee/rest/v1"
+		},
+		"ls_ProfiseeRESTAPI_upsert_properties_typeProperties_userName": {
+			"value": "X-API-Key"
+		},
+		"ls_azure_datalake_storage_properties_typeProperties_url": {
+			"value": "https://profiseedemostorage.dfs.core.windows.net/"
+		},
+		"containerUri": {
+			"value": ""
+		},
+		"containerSasToken": {
+			"value": ""
+		}
+	}
+}
