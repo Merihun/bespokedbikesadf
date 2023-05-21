@@ -16,6 +16,15 @@
 		},
 		"ls_azurekeyvault_properties_typeProperties_baseUrl": {
 			"value": "https://BeSpokedBikesKeyVault.vault.azure.net/"
+		},
+		"NewCsvFile_properties_Copy from CSV to Profisee REST API_parameters_FileName": {
+			"value": "@triggerBody().fileName"
+		},
+		"NewCsvFile_properties_Copy from CSV to Profisee REST API_parameters_FileFolder": {
+			"value": "@triggerBody().folderPath"
+		},
+		"NewCsvFile_properties_typeProperties_scope": {
+			"value": "/subscriptions/1891eec5-ea7b-4524-9b2e-89b85a66cec9/resourceGroups/BeSpokedBikes/providers/Microsoft.Storage/storageAccounts/bespokedbikesdemostorage"
 		}
 	}
 }
