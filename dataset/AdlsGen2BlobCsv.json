@@ -9,7 +9,7 @@
 		"parameters": {
 			"FolderName": {
 				"type": "string",
-				"defaultValue": "profisee-input/customeraccount"
+				"defaultValue": "profisee-input"
 			},
 			"FileName": {
 				"type": "string",
@@ -28,6 +28,7 @@
 					"value": "@dataset().FileName",
 					"type": "Expression"
 				},
+				"folderPath": "customeraccount",
 				"fileSystem": {
 					"value": "@dataset().FolderName",
 					"type": "Expression"
