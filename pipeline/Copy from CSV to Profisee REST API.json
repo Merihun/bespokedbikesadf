@@ -21,7 +21,10 @@
 						"additionalColumns": [
 							{
 								"name": "Source System",
-								"value": ""
+								"value": {
+									"value": "@replace(pipeline().parameters.FileName, '.csv','')",
+									"type": "Expression"
+								}
 							}
 						],
 						"storeSettings": {
