@@ -77,12 +77,10 @@
 		],
 		"parameters": {
 			"FileName": {
-				"type": "string",
-				"defaultValue": "FHI360CustomerAccounts.csv"
+				"type": "string"
 			},
 			"FileFolder": {
-				"type": "string",
-				"defaultValue": "profisee-input/customeraccount"
+				"type": "string"
 			}
 		},
 		"folder": {
