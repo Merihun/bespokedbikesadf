@@ -3,7 +3,7 @@
 	"properties": {
 		"description": "Profisee members update REST API call.",
 		"linkedServiceName": {
-			"referenceName": "RestService1",
+			"referenceName": "ls_ProfiseeRESTAPI_upsert",
 			"type": "LinkedServiceReference"
 		},
 		"parameters": {
