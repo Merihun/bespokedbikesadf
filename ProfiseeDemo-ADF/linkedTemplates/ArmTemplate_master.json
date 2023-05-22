@@ -7,33 +7,13 @@
 			"metadata": "Data Factory name",
 			"defaultValue": "ProfiseeDemo-ADF"
 		},
-		"ls_azure_datalake_storage_accountKey": {
-			"type": "secureString",
-			"metadata": "Secure string for 'accountKey' of 'ls_azure_datalake_storage'"
-		},
 		"ls_AzureDataLakeStorage_accountKey": {
 			"type": "secureString",
 			"metadata": "Secure string for 'accountKey' of 'ls_AzureDataLakeStorage'"
 		},
-		"ls_AzureKV_properties_typeProperties_baseUrl": {
-			"type": "string",
-			"defaultValue": "https://fhi360demoKV.vault.azure.net/"
-		},
-		"ls_ProfiseeRESTAPI_upsert_properties_typeProperties_url": {
-			"type": "string",
-			"defaultValue": "https://sbprofisee.onebridge.xyz/profisee/rest/v1"
-		},
-		"ls_ProfiseeRESTAPI_upsert_properties_typeProperties_userName": {
-			"type": "string",
-			"defaultValue": "X-API-Key"
-		},
-		"ls_azure_datalake_storage_properties_typeProperties_url": {
-			"type": "string",
-			"defaultValue": "https://profiseedemostorage.dfs.core.windows.net/"
-		},
-		"ls_AzureDataLakeStorage_properties_typeProperties_url": {
-			"type": "string",
-			"defaultValue": "https://profiseedemosa.dfs.core.windows.net/"
+		"ls_azure_datalake_storage_accountKey": {
+			"type": "secureString",
+			"metadata": "Secure string for 'accountKey' of 'ls_azure_datalake_storage'"
 		},
 		"AzureKeyVault1_properties_typeProperties_baseUrl": {
 			"type": "string",
@@ -50,6 +30,26 @@
 		"RestService1_properties_typeProperties_userName": {
 			"type": "string",
 			"defaultValue": "X-API-Key"
+		},
+		"ls_AzureDataLakeStorage_properties_typeProperties_url": {
+			"type": "string",
+			"defaultValue": "https://profiseedemosa.dfs.core.windows.net/"
+		},
+		"ls_AzureKV_properties_typeProperties_baseUrl": {
+			"type": "string",
+			"defaultValue": "https://fhi360demoKV.vault.azure.net/"
+		},
+		"ls_ProfiseeRESTAPI_upsert_properties_typeProperties_url": {
+			"type": "string",
+			"defaultValue": "https://sbprofisee.onebridge.xyz/profisee/rest/v1"
+		},
+		"ls_ProfiseeRESTAPI_upsert_properties_typeProperties_userName": {
+			"type": "string",
+			"defaultValue": "X-API-Key"
+		},
+		"ls_azure_datalake_storage_properties_typeProperties_url": {
+			"type": "string",
+			"defaultValue": "https://profiseedemostorage.dfs.core.windows.net/"
 		},
 		"containerUri": {
 			"type": "string",
@@ -78,20 +78,11 @@
 					"factoryName": {
 						"value": "[parameters('factoryName')]"
 					},
-					"ls_azure_datalake_storage_accountKey": {
-						"value": "[parameters('ls_azure_datalake_storage_accountKey')]"
-					},
 					"ls_AzureDataLakeStorage_accountKey": {
 						"value": "[parameters('ls_AzureDataLakeStorage_accountKey')]"
 					},
-					"ls_AzureKV_properties_typeProperties_baseUrl": {
-						"value": "[parameters('ls_AzureKV_properties_typeProperties_baseUrl')]"
-					},
-					"ls_azure_datalake_storage_properties_typeProperties_url": {
-						"value": "[parameters('ls_azure_datalake_storage_properties_typeProperties_url')]"
-					},
-					"ls_AzureDataLakeStorage_properties_typeProperties_url": {
-						"value": "[parameters('ls_AzureDataLakeStorage_properties_typeProperties_url')]"
+					"ls_azure_datalake_storage_accountKey": {
+						"value": "[parameters('ls_azure_datalake_storage_accountKey')]"
 					},
 					"AzureKeyVault1_properties_typeProperties_baseUrl": {
 						"value": "[parameters('AzureKeyVault1_properties_typeProperties_baseUrl')]"
@@ -99,17 +90,26 @@
 					"AzureKeyVault2_properties_typeProperties_baseUrl": {
 						"value": "[parameters('AzureKeyVault2_properties_typeProperties_baseUrl')]"
 					},
-					"ls_ProfiseeRESTAPI_upsert_properties_typeProperties_url": {
-						"value": "[parameters('ls_ProfiseeRESTAPI_upsert_properties_typeProperties_url')]"
+					"ls_AzureDataLakeStorage_properties_typeProperties_url": {
+						"value": "[parameters('ls_AzureDataLakeStorage_properties_typeProperties_url')]"
 					},
-					"ls_ProfiseeRESTAPI_upsert_properties_typeProperties_userName": {
-						"value": "[parameters('ls_ProfiseeRESTAPI_upsert_properties_typeProperties_userName')]"
+					"ls_AzureKV_properties_typeProperties_baseUrl": {
+						"value": "[parameters('ls_AzureKV_properties_typeProperties_baseUrl')]"
+					},
+					"ls_azure_datalake_storage_properties_typeProperties_url": {
+						"value": "[parameters('ls_azure_datalake_storage_properties_typeProperties_url')]"
 					},
 					"RestService1_properties_typeProperties_url": {
 						"value": "[parameters('RestService1_properties_typeProperties_url')]"
 					},
 					"RestService1_properties_typeProperties_userName": {
 						"value": "[parameters('RestService1_properties_typeProperties_userName')]"
+					},
+					"ls_ProfiseeRESTAPI_upsert_properties_typeProperties_url": {
+						"value": "[parameters('ls_ProfiseeRESTAPI_upsert_properties_typeProperties_url')]"
+					},
+					"ls_ProfiseeRESTAPI_upsert_properties_typeProperties_userName": {
+						"value": "[parameters('ls_ProfiseeRESTAPI_upsert_properties_typeProperties_userName')]"
 					}
 				}
 			},
