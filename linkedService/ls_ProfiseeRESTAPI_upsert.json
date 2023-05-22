@@ -11,11 +11,11 @@
 			"password": {
 				"type": "AzureKeyVaultSecret",
 				"store": {
-					"referenceName": "ls_AzureKV",
+					"referenceName": "AzureKeyVault2",
 					"type": "LinkedServiceReference"
 				},
 				"secretName": "rest-api-key",
-				"secretVersion": "42a271f3d4324f438a5faab4d4c8103d"
+				"secretVersion": "0338dd41b509430c8d686448354c1614"
 			}
 		}
 	}
