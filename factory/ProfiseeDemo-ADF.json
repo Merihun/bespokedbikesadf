@@ -1,0 +1,9 @@
+{
+	"name": "ProfiseeDemo-ADF",
+	"location": "eastus",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "8cf4453a-a9cb-4553-bba5-a9f124df8fdb",
+		"tenantId": "c68f3f5e-3f0a-4a33-b25e-06e082884fab"
+	}
+}
